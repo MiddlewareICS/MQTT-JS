@@ -1,0 +1,10 @@
+{
+  "name": "MQTT-JS",
+  "version": "1.0",
+  "description": "MQTT by js ",
+  "author": "hewei",
+  "dependencies": {
+    "mqtt": "^2.6.2"
+  },
+  "devDependencies": {}
+}
