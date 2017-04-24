@@ -6,11 +6,14 @@ var device_json={"secretkey":"93cf82461c324858961b6cc70fc5033d","deviceprofile":
 
  
 client.on('connect', function () {
-  //向presence主题发布消息
+
+  //向Temperature主题发布消息
   setInterval(function(){
-  	client.publish('presence', 'Hello mqtt');
-  	console.log('\n## Device pub: Hello mqtt')
+    var temperature = 25;
+  	client.publish('Temperature', ''+temperature);
+  	console.log('\n## Device pub: The Temperature is'+ temperature)
   },3000);
+  
   
   setInterval(function(){
   	device_json['deviceprofile']['devicename']='devicename'+new Date().getTime();
