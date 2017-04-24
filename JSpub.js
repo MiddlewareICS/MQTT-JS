@@ -15,7 +15,7 @@ client.on('connect', function () {
   setInterval(function(){
   	device_json['deviceprofile']['devicename']='devicename'+new Date().getTime();
   	client.publish('ICS', JSON.stringify(device_json));
-  	console.log('\n##-- Device pub: '+ JSON.stringify(device_json))
+  	console.log('\n##-- Device pub: '+ 'ICS --  ' + device_json['deviceprofile']['devicename'] + '{...}')
   },1000);
 });
   
