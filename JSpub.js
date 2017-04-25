@@ -11,7 +11,7 @@ client.on('connect', function () {
   setInterval(function(){
     var temperature = 25;
   	client.publish('Temperature', ''+temperature);
-  	console.log('\n## Device pub: The Temperature is'+ temperature)
+  	console.log('\n## Device pub: The Temperature is: '+ temperature)
   },3000);
   
   

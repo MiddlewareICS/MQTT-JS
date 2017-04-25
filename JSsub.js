@@ -4,11 +4,8 @@ var client  = mqtt.connect('mqtt://127.0.0.1');
 var x=11,y=22;
 
 client.on('connect', function () {
-  //订阅presence主题
-  client.subscribe('presence');
-  // client.subscribe('short');
 
-
+  client.subscribe('Temperature');
   client.subscribe('toDevice');
  
 });
