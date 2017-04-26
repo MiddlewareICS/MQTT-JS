@@ -5,7 +5,8 @@ var x=11,y=22;
 
 client.on('connect', function () {
 
-  client.subscribe('Temperature');
+  client.subscribe('Environment');
+  client.subscribe('RaspberryPiInfo');
   client.subscribe('toDevice');
  
 });
