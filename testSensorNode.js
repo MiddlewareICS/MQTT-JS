@@ -51,9 +51,8 @@ Dclient.on('message', function (topic, message) {
         Dclient.publish(topic.replace("raw",""),scriptSolve(scriptStr,topic,messageStr));
       }
     }
-
       
-    }      
+  }      
 });
 
 function scriptSolve(scriptStr,topic,deviceData){
